@@ -28,7 +28,9 @@ A real-time weather dashboard that provides location-based current weather, hour
 ## 🔌 APIs Used
 
 - Current Weather API  
-- Forecast API  
+- Forecast API
+
+> API key is required.
 
 ## ⚙️ Setup & Installation
 
