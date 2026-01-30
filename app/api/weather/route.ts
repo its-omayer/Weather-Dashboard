@@ -9,7 +9,11 @@ export async function GET(request: NextRequest) {
   const city = searchParams.get("city")
   const units = searchParams.get("units") || "metric"
 
+  console.log("[v0] API_KEY exists:", !!API_KEY)
+  console.log("[v0] Request params:", { lat, lon, city, units })
+
   if (!API_KEY) {
+    console.log("[v0] API key missing")
     return NextResponse.json(
       { error: "API key not configured" },
       { status: 500 }
